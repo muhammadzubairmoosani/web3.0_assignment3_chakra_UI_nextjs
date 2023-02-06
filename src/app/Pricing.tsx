@@ -69,7 +69,7 @@ export const Pricing = () => {
           </Text>
           <Stack as="ul" spacing="4" mt="6">
             {checkList.map((list: string) => (
-              <HStack as="li" spacing={["1.5", "1.5", "5"]}>
+              <HStack key={list} as="li" spacing={["1.5", "1.5", "5"]}>
                 <Image
                   w={["4", "4", "6"]}
                   src="/icons/check.png"

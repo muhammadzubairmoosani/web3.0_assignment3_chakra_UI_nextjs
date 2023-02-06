@@ -28,6 +28,7 @@ export const Feautres = () => {
             spacing="2"
             maxW={["100%", "100%", "72"]}
             my={["3", "3", "auto"]}
+            key={feature.text}
           >
             <Image src={feature.img} alt="feature 1" w={["8", "8"]} />
             <Text
