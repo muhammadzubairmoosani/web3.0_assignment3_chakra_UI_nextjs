@@ -28,8 +28,8 @@ export const Pricing = () => {
     >
       <Flex flexWrap={["wrap", "wrap", "nowrap"]}>
         <Box
-          py="14"
-          px="12"
+          py={["9", "9", "14"]}
+          px={["0", "0", "12"]}
           w={["100%", "100%", "auto"]}
           textAlign="center"
           bg="#F0EAFB"
@@ -37,26 +37,45 @@ export const Pricing = () => {
           <Text fontWeight="bold" fontSize="24px" color="gray.900">
             Premium PRO
           </Text>
-          <Text fontWeight="bold" fontSize="60px" color="gray.900">
+          <Text
+            fontWeight="bold"
+            fontSize={["48px", "48px", "60px"]}
+            color="gray.900"
+          >
             $329
           </Text>
           <Text fontWeight="normal" fontSize="18px" color="gray.900">
             billed just once
           </Text>
-          <Button bg="purple.500" colorScheme="gray.50" size="lg" w="64" mt="6">
+          <Button
+            bg="purple.500"
+            colorScheme="gray.50"
+            size="md"
+            w={["48", "48", "64"]}
+            mt="6"
+          >
             Get Started
           </Button>
         </Box>
-        <Box color="gray.700" p="12" bg="white">
-          <Text fontWeight="medium" fontSize="lg">
+        <Box
+          color="gray.700"
+          py={["10", "10", "12"]}
+          px={["3.5", "3.5", "12"]}
+          bg="white"
+        >
+          <Text fontWeight="medium" fontSize={["md", "md", "lg"]}>
             Access these features when you get this pricing package for your
             business.
           </Text>
           <Stack as="ul" spacing="4" mt="6">
             {checkList.map((list: string) => (
-              <HStack as="li" spacing="5">
-                <Image src="/icons/check.png" alt="right check" />
-                <Text fontWeight="medium" fontSize="lg">
+              <HStack as="li" spacing={["1.5", "1.5", "5"]}>
+                <Image
+                  w={["4", "4", "6"]}
+                  src="/icons/check.png"
+                  alt="right check"
+                />
+                <Text fontWeight="medium" fontSize={["md", "md", "lg"]}>
                   {list}
                 </Text>
               </HStack>

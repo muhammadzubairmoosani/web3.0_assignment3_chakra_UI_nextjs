@@ -6,7 +6,7 @@ export const Header = () => {
     <Box
       color="gray.50"
       bg="purple.600"
-      pt="90px"
+      pt={["56px", "56px", "90px"]}
       pb="198px"
       px="8"
       textAlign={["left", "left", "center"]}

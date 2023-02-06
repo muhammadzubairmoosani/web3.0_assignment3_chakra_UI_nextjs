@@ -18,19 +18,23 @@ const features: { img: string; text: string }[] = [
 
 export const Feautres = () => {
   return (
-    <Box maxW="906px" m="auto" mx={["6", "6", "auto"]} my={["10", "10", "14"]}>
+    <Box maxW="906px" m="auto" mx={["6", "6", "auto"]} my={["6", "6", "14"]}>
       <Flex
         justifyContent="space-between"
         direction={["column", "column", "row"]}
       >
         {features.map((feature) => (
           <HStack
-            spacing="6"
+            spacing="2"
             maxW={["100%", "100%", "72"]}
-            my={["6", "6", "auto"]}
+            my={["3", "3", "auto"]}
           >
-            <Image src={feature.img} alt="feature 1" />
-            <Text color="gray.900" fontWeight="bold" fontSize="18px">
+            <Image src={feature.img} alt="feature 1" w={["8", "8"]} />
+            <Text
+              color="gray.900"
+              fontWeight="bold"
+              fontSize={["sm", "sm", "18px"]}
+            >
               {feature.text}
             </Text>
           </HStack>

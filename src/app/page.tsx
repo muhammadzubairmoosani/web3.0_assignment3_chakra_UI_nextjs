@@ -4,10 +4,10 @@ import { Feautres } from "./Features";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Header />
       <Pricing />
       <Feautres />
-    </main>
+    </>
   );
 }
