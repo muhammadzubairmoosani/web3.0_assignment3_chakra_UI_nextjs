@@ -25,12 +25,12 @@ export const Feautres = () => {
       >
         {features.map((feature) => (
           <HStack
-            spacing="2"
+            spacing={["2", "2", "6"]}
             maxW={["100%", "100%", "72"]}
             my={["3", "3", "auto"]}
             key={feature.text}
           >
-            <Image src={feature.img} alt="feature 1" w={["8", "8"]} />
+            <Image src={feature.img} alt="feature 1" w={["8", "8", "12"]} />
             <Text
               color="gray.900"
               fontWeight="bold"
